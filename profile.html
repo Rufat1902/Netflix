@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .form-control,
+    .form-select {
+      background-color: #333 !important;
+      color: #fff !important;
+      border: none;
+    }
+
+    .form-select option {
+      color: #fff;
+      background-color: #000;
+    }
+
+    .divider {
+      border-top: 1px solid #666;
+    }
+
+    .btn-outline-light {
+      border-color: #fff;
+    }
+
+    .btn-outline-light:hover {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .btn-delete {
+      color: #999;
+      border-color: #999;
+    }
+
+    .btn-delete:hover {
+      background-color: #999;
+      color: #000;
+    }
+
+    .section-label {
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-black px-4">
+  <a class="navbar-brand fw-bold text-danger" href="#">NETFLIX</a>
+   
+
+    <div class="d-flex align-items-start mb-4">
+      <img src="./assets/profile1.png" alt="profile" class="profile-img me-3" />
+      <input type="text" class="form-control" value="Strive Student" />
+    </div>
+
+    <div class="mb-4">
+      <div class="section-label">Language</div>
+      <select class="form-select w-auto">
+        <option selected>English</option>
+        <option>Türkçe</option>
+        <option>Azerbaycanca</option>
+      </select>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="mb-4">
+      <div class="section-label">Maturity Settings</div>
+      <button class="btn btn-dark btn-sm mb-2">ALL MATURITY RATINGS</button>
+      <p class="text-muted mb-2" style="font-size: 0.9rem;">Show titles of <strong>all maturity ratings</strong> for this profile.</p>
+      <button class="btn btn-outline-light btn-sm">EDIT</button>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="mb-4">
+      <div class="section-label mb-2">Autoplay controls</div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="auto1" checked />
+        <label class="form-check-label" for="auto1">Autoplay next episode in a series on all devices.</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="auto2" checked />
+        <label class="form-check-label" for="auto2">Autoplay previews while browsing on all devices.</label>
+      </div>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="d-flex flex-wrap gap-2">
+      <button class="btn btn-light">SAVE</button>
+      <button class="btn btn-outline-light">CANCEL</button>
+      <button class="btn btn-outline-light btn-delete">DELETE PROFILE</button>
+    </div>
+  </div>
+
+</body>
+</html>
