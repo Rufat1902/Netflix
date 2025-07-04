@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
+   <style>
     body {
       background-color: #000;
       color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    .container-box {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
     }
 
     .profile-img {
@@ -31,6 +38,7 @@
 
     .divider {
       border-top: 1px solid #666;
+      margin: 1.5rem 0;
     }
 
     .btn-outline-light {
@@ -57,12 +65,27 @@
       color: #aaa;
       margin-bottom: 6px;
     }
+
+    .form-check-label {
+      font-size: 0.95rem;
+    }
+
+    .top-bar {
+      border-bottom: 1px solid #333;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-black px-4">
-  <a class="navbar-brand fw-bold text-danger" href="#">NETFLIX</a>
-   
+    <header>
+<div class="top-bar">
+    <div img src="./assets/netflix_logo.png" alt="n" style="width: 500px;"></div>
+  </div>
+  </header>
+
+  <div class="container-box">
+    <h1 class="mb-4">Edit Profile</h1>
+    <hr class="divider" />
 
     <div class="d-flex align-items-start mb-4">
       <img src="./assets/profile1.png" alt="profile" class="profile-img me-3" />
@@ -73,8 +96,8 @@
       <div class="section-label">Language</div>
       <select class="form-select w-auto">
         <option selected>English</option>
-        <option>Türkçe</option>
-        <option>Azerbaycanca</option>
+        <option>Turkish</option>
+        <option>Italian</option>
       </select>
     </div>
 
